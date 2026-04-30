@@ -501,13 +501,18 @@ ul {
 .card-stat-2 { bottom: 30px; right: -30px; }
 .card-stat-3 { top: 50%; right: -50px; }
 .fc-icon { font-size: 1.4rem; }
-.fc-text { display: flex; flex-direction: column; }
+.fc-text { display: flex; flex-direction: row; align-items: flex-start; gap: 2px; }
 .fc-num {
   font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: bold;
   color: var(--text-primary);
   line-height: 1.2;
+}
+.fc-num sup {
+  font-size: 1rem;
+  vertical-align: super;
+  line-height: 0;
 }
 .fc-label {
   font-size: 0.72rem;
